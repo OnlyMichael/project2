@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Michael Adebowale - contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/project2/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylecontact.css">
+    <link rel="icon" type="image/x-icon"  href="/opdrachten/project1/js/img/favicon.ico">
+</head>
+
+<body>
+    <section class="main">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Michael Adebowale</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="heading" title="Welkom op de website van mijn portfolio!">
+                    Michael Adebowale
+                </li>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="ervaring.html">Ervaring</a></li>
+                <li><a href="hobby.html">Hobby's</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container">
+            <div class="card border-0 shadow my-5">
+              <div class="card-body p-5">
+                <h1 class="fw-light">Contactgegevens van mij</h1>
+                <div class="table-div"><table class="table">
+                  <th colspan="2"></th>
+                  <tr><td>GSM nummer:    </td><td>0466 04 98 79</td></tr>
+                  <tr><td>Instagram: </td><td>@everyoneluvsmichael</td></tr>
+                  <tr><td>Twitch: </td><td>@KingJahsehOnfroy</td></tr>
+                  <tr><td>Email adres:   </td><td>michael.adebowale17324@gmail.com</td></tr>
+                  </table></div>
+                <div style="height: 0px"></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        <!-- dit is voor de contactformulier dat je kan invullen, hieronder -->
+          <div class="container-fluid px-5 my-5">
+            <div class="row justify-content-center">
+              <div class="col-xl-10">
+                <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+                  <div class="card-body p-0">
+                    <div class="row g-0">
+                      <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                      <div class="col-sm-6 p-4">
+                        <div class="text-center">
+                          <div class="h3 fw-light">Contact Formulier</div>
+                          <p class="mb-4 text-muted">Vul hieronder je gegevens in</p>
+                        </div>
+          
+                       <!--  -->
+          
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          
+                          <!-- Name Input -->
+                          <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                            <label for="name">Naam en voornaam</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Naam is verplicht!</div>
+                          </div>
+          
+                          <!-- Email Input -->
+                          <div class="form-floating mb-3">
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                            <label for="emailAddress">Email adres</label>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email adres is verplicht!</div>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email adres is niet geldig.</div>
+                          </div>
+                          
+                            <!-- Interesse in skills -->
+                          <div class="form-floating mb-3">
+                            <select name="skillsninterest" id="skillsninterest" class="form-select">
+                              <option value="skill1">C#</option>
+                              <option value="skill2">SQL</option>
+                              <option value="skill3">HTML & CSS</option>
+                              <option value="skill4">Bootstrap</option>
+                            </select>
+                            <label for="skillsninterest">Skills & interesses</label>
+                          </div>
+                          
+                          <!-- Message Input -->
+                          <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                            <label for="message">Vraag</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Vraag is verplicht.</div>
+                          </div>
+          
+                          <!-- Submit success message -->
+                          <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                              <div class="fw-bolder">Form submission successful!</div>
+                              <p>To activate this form, sign up at</p>
+                              <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                          </div>
+          
+                          <!-- Submit error message -->
+                          <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Fout bij versturen!</div>
+                          </div>
+          
+                          <!-- Submit button -->
+                          <div class="d-grid">
+                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Versturen</button>
+                          </div>
+                        </form>
+                        <!-- End of contact form -->
+          
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- CDN Link to SB Forms Scripts -->
+          <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <footer>&copy; Michael Adebowale - <img src="img/instagram.png" alt="" title="Michael" class="float-md-none" width="100" height="100" style="padding: 30px">  <a href="https://www.instagram.com/">Instagram</a></footer>
+    </section>
+</body>
+
+</html>

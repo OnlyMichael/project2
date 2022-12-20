@@ -1,0 +1,16 @@
+body {
+    background: #ffffff;
+    background: linear-gradient(to right, #d49f7b, #3a3850);
+  }
+  
+  .bg-image {
+    background-image: url('https://images.unsplash.com/photo-1561487767-1f32d174cce0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  h6{
+    color: black;
+
+  }
