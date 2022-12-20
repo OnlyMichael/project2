@@ -5,4 +5,10 @@ body{
     background: url(../img/2022-10-25.png) no-repeat ;
     background-size: cover;
     background-position: center;
+    
 }
+.card-text
+{
+    color: black;
+}
+.card {display:inline-block;}

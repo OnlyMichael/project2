@@ -4,10 +4,14 @@
     <title>cv</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/project2/css/style.css" rel="stylesheet" type="text/css" />
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
     <link rel="icon" type="image/x-icon"  href="/opdrachten/project1/js/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/CV.css">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="vendor/owlcarousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="vendor/owlcarousel/dist/assets/owl.theme.default.min.css">
     
 </head>
 <body>
@@ -41,7 +45,68 @@
           </nav>
         
 <!-- hier komt de cv -->
-        <section id="main">
+
+          <section class="container">
+            <!-- div.row>div.col-md-6*2 -->
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/michael.jpg" alt="Afbeelding van mij" class="img-fluid rounded-circle">
+                  <h1>Michael Adebowale</h1>
+                  <h2>Student programmeren</h2>
+                </div>
+                <div class="col-md-8 ps-5">
+                    <div class="row my-4">
+                    <h2>Talenkennis</h2>
+                    <p>Nederlands</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      
+                      <p class="mt-3">Engels</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div><!-- /row -->
+
+                        <div class="row my-4">
+                      <!-- carousel -->
+                      <div class="owl-carousel">
+                        <div> 
+                            <img src="img/csharp.jpg" class="d-block w-100" alt="..."> 
+                        </div>
+                        <div> 
+                            <img src="img/bs.jpg" class="d-block w-100" alt="...">     
+                        </div>
+                        <div> 
+                            <img src="img/css.jpg" class="d-block w-100" alt="...">     
+                        </div>
+                        <div> 
+                            <img src="img/html.jpg" class="d-block w-100" alt="...">     
+                        </div>
+                        <div> 
+                            <img src="img/sql.jpg" class="d-block w-100" alt="...">     
+                        </div>
+                        
+                      </div>
+                    </div> <!-- /row -->
+                    
+                </div>
+            </div>
+
+
+
+          </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- <section id="main">
           <section id="links">
               <div id="top">
               <img src="img/michael.jpg" alt="Afbeelding van mij">
@@ -68,36 +133,78 @@
               </div>
           </section>
   
-          <section id="rechts">
+          <section  id="rechts">
               <div class="middle">
               <h1 class="title">Profile</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit tempora labore atque exercitationem corporis inventore quaerat excepturi amet iure cum deleniti dolor soluta quam, quo ipsam facilis distinctio pariatur suscipit asperiores consectetur eveniet dolores? Facere ab minus odio porro quasi. Assumenda quae perspiciatis fuga commodi fugiat facilis saepe itaque recusandae incidunt, inventore veniam tempora quo ipsam. Quibusdam beatae totam nemo delectus natus unde sint, cupiditate animi facere illum adipisci soluta voluptates aliquid impedit ad odit, amet harum vero blanditiis. Eum culpa rerum laborum eius praesentium? Quos nam voluptate corrupti est nihil beatae rerum vitae neque, quam tenetur accusamus velit mollitia.</p>
+              <p>Ik ben zelf een erg gedreven en rustig persoon. Ik kan ervoor zorgen dat ik rust overbreng bij andere mensen; ook omdat ik bijna nooit stress ervaar. Ik ben dus erg  handig in een team dat met veel stress zit of slechte teamwork heeft. </p>
               </div>
               <div class="middle">
               <h1 class="title">Skills</h1>
-                  <div id="skills">
-  
-                  <div class="skill">
-                      <h4>C#</h4>
-                      <div class="percentage">
-                          <div class="fill" style="width:40% ;"></div>
-                      </div>
+                  
+                <!-- CAROUSEL           CAROUSEL              CAROUSEL          CAROUSEL -->
+
+
+                
+
+              <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/csharp.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>C# / C-sharp</h5>
+                      
+                    </div>
                   </div>
-                  <div class="skill">
-                      <h4>HTML & CSS</h4>
-                      <div class="percentage">
-                          <div class="fill" style="width:20% ;"></div>
-                      </div>
+                  <div class="carousel-item">
+                    <img src="img/css.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>CSS</h5>
+                      
+                    </div>
                   </div>
-                  <div class="skill">
-                      <h4>Data
-                        modellering</h4>
-                      <div class="percentage">
-                          <div class="fill" style="width: 15%;"></div>
-                      </div>
-                  </div></div>
+                  <div class="carousel-item">
+                    <img src="img/bs.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bootstrap</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/sql.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sql</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/html.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>HTML</h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div class="middle">
+
+
+              </div>
+              
                 <div class="middle">
                   <h1 class="title">Talenkennis</h1>
                       <div id="skills">
@@ -119,7 +226,8 @@
                           <div class="percentage">
                               <div class="fill" style="width: 45%;"></div>
                           </div>
-                      </div></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="middle">
                   <h1 class="title">Ervaring</h1>
@@ -127,7 +235,7 @@
                   
               </div>
               </section>
-      </section>
+      </section> --> -->
 
 <!-- cv stop -->
 
@@ -137,5 +245,12 @@
     </section>
             
     
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script src="vendor/owlcarousel/dist/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
 </body>
 </html>
